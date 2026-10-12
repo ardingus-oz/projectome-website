@@ -1,10 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project OME — Longitudinal Epigenetics</title>
-  <meta name="description" content="Measure and track how your biology changes over time. Project OME is a longitudinal epigenetic health monitoring platform.">
+  <title>Projectome — Epigenetic engineering platform for longevity clinics</title>
+  <meta name="description" content="Know which longevity therapeutics actually change biology. Projectome measures epigenetic change in clients over the course of treatment and uses AI models to help clinics interpret each client's biology.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Projectome">
+  <meta property="og:url" content="https://www.projectome.com/">
+  <meta property="og:title" content="Projectome — Epigenetic engineering platform for longevity clinics">
+  <meta property="og:description" content="Projectome measures epigenetic change in clients over the course of treatment, so longevity clinics can see which therapeutics are working.">
+  <meta property="og:image" content="https://www.projectome.com/og-image.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Project OME: Know which longevity therapeutics actually change biology. An epigenetic engineering platform for longevity clinics.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Projectome — Epigenetic engineering platform for longevity clinics">
+  <meta name="twitter:description" content="Projectome measures epigenetic change in clients over the course of treatment, so longevity clinics can see which therapeutics are working.">
+  <meta name="twitter:image" content="https://www.projectome.com/og-image.png">
+  <meta name="twitter:image:alt" content="Project OME: Know which longevity therapeutics actually change biology. An epigenetic engineering platform for longevity clinics.">
+  <link rel="canonical" href="https://www.projectome.com/">
+  <script>
+    (function (d) {
+      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      d.className = d.className.replace('no-js', reduce ? 'js reduce-motion' : 'js anim');
+    })(document.documentElement);
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,600;9..40,700;9..40,900&family=IBM+Plex+Mono:wght@300;400&display=swap" rel="stylesheet">
@@ -16,241 +38,312 @@
 </head>
 <body>
 
+  <a class="skip-link mono" href="#main">SKIP TO CONTENT</a>
+
   <div class="grid-overlay" aria-hidden="true"></div>
 
-  <nav class="nav" id="nav">
-    <span class="nav-logo">PROJECT OME</span>
-    <a href="#waitlist" class="nav-cta">EARLY ACCESS</a>
-  </nav>
+  <header class="nav" id="nav">
+    <a href="#hero" class="nav-logo" aria-label="Project OME, back to top">PROJECT OME</a>
+    <div class="nav-right">
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#problem" class="nav-link">PROBLEM</a>
+        <a href="#approach" class="nav-link">APPROACH</a>
+        <a href="#science" class="nav-link">SCIENCE</a>
+        <a href="#founder" class="nav-link">FOUNDER</a>
+        <a href="#contact" class="nav-link">CONTACT</a>
+      </nav>
+      <a href="#contact" class="nav-cta">
+        <span class="nav-cta-long">REQUEST A CONVERSATION</span><span class="nav-cta-short">CONTACT US</span>
+      </a>
+    </div>
+  </header>
 
   <div class="layout">
 
-    <!-- LEFT: sticky cell video panel -->
-    <div class="left-panel">
+    <!-- LEFT: sticky cell video panel (decorative) -->
+    <div class="left-panel" aria-hidden="true">
       <video class="cell-video" autoplay muted loop playsinline preload="auto">
         <source src="OME_CELL_LOOP.mp4" type="video/mp4">
       </video>
       <div class="video-overlay-labels">
         <div class="vl">CELL / 001</div>
         <div class="vl">DNA METHYLATION</div>
-        <div class="vl vl--accent">CpG SITES: 100,000+</div>
+        <div class="vl vl--accent">EPIC v2.0 ARRAY</div>
       </div>
       <div class="left-rule"></div>
     </div>
 
     <!-- RIGHT: scrolling content -->
-    <div class="right-panel">
+    <main class="right-panel" id="main">
 
-      <!-- ── SECTION 1: HERO ── -->
-      <section class="section s-hero" id="hero">
+      <!-- ── HERO ── -->
+      <section class="section s-hero" id="hero" aria-labelledby="hero-heading">
         <div class="section-arc" aria-hidden="true">
           <svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle class="arc-ring" cx="200" cy="200" r="180" stroke="rgb(87,130,127)" stroke-width="0.75"/>
           </svg>
         </div>
         <div class="section-inner">
-          <div class="kicker mono">LONGITUDINAL EPIGENETICS / V.1</div>
-          <h1 class="hero-title">
-            <span class="hero-pre" id="hero-pre"></span>
-            <span class="hero-main" id="hero-main"></span>
-            <span class="hero-cursor" id="hero-cursor">|</span>
+          <p class="kicker mono">EPIGENETIC ENGINEERING PLATFORM / FOR LONGEVITY CLINICS</p>
+          <p class="hero-title" aria-hidden="true">
+            <span class="hero-pre" id="hero-pre">PROJECT</span><span class="hero-main" id="hero-main">OME</span><span class="hero-cursor" id="hero-cursor">|</span>
+          </p>
+          <h1 class="hero-headline" id="hero-heading">
+            Know which longevity therapeutics actually change biology.
           </h1>
           <p class="hero-tagline" id="hero-tagline">
-            Measure and track how your biology changes over time.
+            Projectome is an epigenetic engineering platform for longevity clinics. It measures epigenetic change in clients over the course of treatment, and uses AI models to help clinics interpret each client's biology, so clinics can see what is working.
           </p>
-          <div class="hero-stat" id="hero-stat">
-            <div class="hero-stat-item">
-              <div class="hero-num">100K+</div>
-              <div class="mono kicker">CPG SITES MEASURED</div>
-            </div>
-            <div class="hero-stat-item">
-              <div class="hero-num">4×</div>
-              <div class="mono kicker">MEASUREMENTS PER YEAR</div>
-            </div>
-            <div class="hero-stat-item">
-              <div class="hero-num">6</div>
-              <div class="mono kicker">VALIDATED AGING CLOCKS</div>
-            </div>
+          <div class="hero-ctas" id="hero-ctas">
+            <a href="#contact" class="btn btn--solid mono">REQUEST A CONVERSATION</a>
+            <a href="#approach" class="btn btn--ghost mono">HOW IT WORKS</a>
           </div>
+          <dl class="hero-stat" id="hero-stat">
+            <div class="hero-stat-item">
+              <dt class="mono kicker">CpG SITES COVERED BY THE EPIC v2.0 ARRAY</dt>
+              <dd class="hero-num">~930K</dd>
+            </div>
+            <div class="hero-stat-item">
+              <dt class="mono kicker">DRIED BLOOD SPOT PER MEASUREMENT</dt>
+              <dd class="hero-num">1</dd>
+            </div>
+            <div class="hero-stat-item">
+              <dt class="mono kicker">VALIDATED AGING CLOCKS</dt>
+              <dd class="hero-num">6</dd>
+            </div>
+          </dl>
         </div>
       </section>
 
-      <!-- ── SECTION 2: EPIGENOME ── -->
-      <section class="section s-epigenome" data-reveal>
+      <!-- ── 01 PROBLEM ── -->
+      <section class="section s-problem" id="problem" data-reveal aria-labelledby="problem-heading">
         <div class="section-arc" aria-hidden="true">
           <svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle class="arc-ring" cx="200" cy="200" r="180" stroke="rgb(87,130,127)" stroke-width="0.75"/>
           </svg>
         </div>
         <div class="section-inner">
-          <div class="kicker mono reveal-item">LAYER 01 / THE EPIGENOME</div>
-          <h2 class="section-title reveal-title">
+          <p class="kicker mono reveal-item">LAYER 01 / THE PROBLEM</p>
+          <h2 class="section-title reveal-title" id="problem-heading">
+            Many therapeutics.<br>Little evidence of which ones work.
+          </h2>
+          <div class="rule reveal-rule"></div>
+          <p class="section-body reveal-item">
+            Longevity clinics offer many therapeutics. It is hard to know which of them measurably change a client's biology, and which are unproven.
+          </p>
+          <p class="section-body reveal-item">
+            Projectome is built to answer that question, client by client.
+          </p>
+        </div>
+      </section>
+
+      <!-- ── 02 APPROACH ── -->
+      <section class="section s-approach" id="approach" data-reveal aria-labelledby="approach-heading">
+        <div class="section-arc" aria-hidden="true">
+          <svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle class="arc-ring" cx="200" cy="200" r="180" stroke="rgb(87,130,127)" stroke-width="0.75"/>
+          </svg>
+        </div>
+        <div class="section-inner">
+          <p class="kicker mono reveal-item">LAYER 02 / HOW IT WORKS</p>
+          <h2 class="section-title reveal-title" id="approach-heading">
+            Measure before.<br>Measure during.<br>See what changed.
+          </h2>
+          <div class="rule reveal-rule"></div>
+          <ol class="timeline">
+            <li class="timeline-item reveal-timeline">
+              <div class="tl-marker mono" aria-hidden="true">01</div>
+              <div class="tl-content">
+                <h3 class="tl-label mono">BASELINE MEASUREMENT</h3>
+                <p class="tl-text">An epigenetic baseline is measured from a single dried blood spot before treatment begins.</p>
+              </div>
+            </li>
+            <li class="timeline-item reveal-timeline">
+              <div class="tl-marker mono" aria-hidden="true">02</div>
+              <div class="tl-content">
+                <h3 class="tl-label mono">REPEAT MEASUREMENTS</h3>
+                <p class="tl-text">Repeat measurements over the course of treatment track how the client's DNA methylation changes against their own baseline.</p>
+              </div>
+            </li>
+            <li class="timeline-item reveal-timeline">
+              <div class="tl-marker mono" aria-hidden="true">03</div>
+              <div class="tl-content">
+                <h3 class="tl-label mono">PER-THERAPEUTIC INSIGHT</h3>
+                <p class="tl-text">The clinic sees which therapeutics are associated with measurable epigenetic change in each client.</p>
+              </div>
+            </li>
+          </ol>
+          <div class="callout reveal-item">
+            <h3 class="callout-label mono">AI-ASSISTED INTERPRETATION</h3>
+            <p>Projectome uses AI models on each client's epigenetic data to help clinics interpret that client's biology.</p>
+          </div>
+          <p class="headed reveal-item">
+            <span class="headed-label mono">WHERE WE'RE HEADED</span>
+            We are working toward using these insights to engineer clients' epigenomes for better outcomes. This is a goal, not a current capability.
+          </p>
+        </div>
+      </section>
+
+      <!-- ── 03 SCIENCE ── -->
+      <section class="section s-science" id="science" data-reveal aria-labelledby="science-heading">
+        <div class="section-arc" aria-hidden="true">
+          <svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle class="arc-ring" cx="200" cy="200" r="180" stroke="rgb(87,130,127)" stroke-width="0.75"/>
+          </svg>
+        </div>
+        <div class="section-inner">
+          <p class="kicker mono reveal-item">LAYER 03 / THE SCIENCE</p>
+          <h2 class="section-title reveal-title" id="science-heading">
             Your genome is fixed.<br>Your epigenome is not.
           </h2>
           <div class="rule reveal-rule"></div>
           <p class="section-body reveal-item">
-            Bloodwork and wearables measure downstream effects — symptoms of what your biology has already done. OME measures the source: the chemical programming layer written directly onto your DNA.
+            DNA methylation is a set of chemical marks on your DNA that help control which genes are switched on or off. Unlike the DNA sequence itself, these marks can change over time, which is why they can be measured again and again over the course of treatment.
           </p>
-          <p class="section-body reveal-item">
-            DNA methylation patterns shift in response to stress, sleep, nutrition, and targeted interventions. These shifts are measurable. They are trackable. They are yours to act on.
-          </p>
+          <dl class="spec">
+            <div class="spec-row reveal-item">
+              <dt class="mono">PLATFORM</dt>
+              <dd>Measured on the Illumina Infinium MethylationEPIC v2.0 array, which covers roughly 930,000 CpG sites.</dd>
+            </div>
+            <div class="spec-row reveal-item">
+              <dt class="mono">SAMPLE</dt>
+              <dd>A single dried blood spot.</dd>
+            </div>
+            <div class="spec-row reveal-item">
+              <dt class="mono">OUTPUTS</dt>
+              <dd>Six validated aging clocks and immune deconvolution, from one sample.</dd>
+            </div>
+            <div class="spec-row reveal-item">
+              <dt class="mono">INTERPRETATION</dt>
+              <dd>AI models applied to each client's epigenetic data to help the clinic interpret it.</dd>
+            </div>
+          </dl>
         </div>
       </section>
 
-      <!-- ── SECTION 3: TECHNOLOGY ── -->
-      <section class="section s-tech" data-reveal>
+      <!-- ── 04 WHO IT'S FOR ── -->
+      <section class="section s-who" id="clinics" data-reveal aria-labelledby="who-heading">
         <div class="section-arc" aria-hidden="true">
           <svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle class="arc-ring" cx="200" cy="200" r="180" stroke="rgb(87,130,127)" stroke-width="0.75"/>
           </svg>
         </div>
         <div class="section-inner">
-          <div class="kicker mono reveal-item">LAYER 02 / THE MEASUREMENT</div>
-          <h2 class="section-title reveal-title">
-            Genome-wide resolution.<br>Single drop of blood.
-          </h2>
-          <div class="rule reveal-rule"></div>
-          <div class="stats-row">
-            <div class="stat-block reveal-stat">
-              <div class="stat-number" data-count="100000" data-suffix="+">0</div>
-              <div class="mono kicker">CpG SITES</div>
-            </div>
-            <div class="stat-block reveal-stat">
-              <div class="stat-number" data-count="284" data-suffix="K">0</div>
-              <div class="mono kicker">UNIQUE PROBE SETS</div>
-            </div>
-          </div>
-          <p class="section-body reveal-item">
-            OME measures DNA methylation at over 100,000 CpG sites across your genome from a single dried blood spot. Not an estimate. Not a proxy. A direct read of the regulatory code that controls how you age.
-          </p>
-        </div>
-      </section>
-
-      <!-- ── SECTION 4: PROTOCOL ── -->
-      <section class="section s-protocol" data-reveal>
-        <div class="section-arc" aria-hidden="true">
-          <svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle class="arc-ring" cx="200" cy="200" r="180" stroke="rgb(87,130,127)" stroke-width="0.75"/>
-          </svg>
-        </div>
-        <div class="section-inner">
-          <div class="kicker mono reveal-item">LAYER 03 / THE PROTOCOL</div>
-          <h2 class="section-title reveal-title">
-            A single snapshot<br>tells you nothing.
-          </h2>
-          <div class="rule reveal-rule"></div>
-          <div class="timeline">
-            <div class="timeline-item reveal-timeline">
-              <div class="tl-marker mono">T+00</div>
-              <div class="tl-content">
-                <div class="tl-label mono">BASELINE</div>
-                <p class="tl-text">Your epigenetic starting point. The zero line everything is measured against.</p>
-              </div>
-            </div>
-            <div class="timeline-item reveal-timeline">
-              <div class="tl-marker mono">T+04</div>
-              <div class="tl-content">
-                <div class="tl-label mono">FIRST RETEST</div>
-                <p class="tl-text">The trajectory begins to emerge. Intervention signals become readable.</p>
-              </div>
-            </div>
-            <div class="timeline-item reveal-timeline">
-              <div class="tl-marker mono">T+08</div>
-              <div class="tl-content">
-                <div class="tl-label mono">TREND CONFIRMED</div>
-                <p class="tl-text">Three data points. Your epigenetic vector is now visible.</p>
-              </div>
-            </div>
-            <div class="timeline-item reveal-timeline">
-              <div class="tl-marker mono">T+12</div>
-              <div class="tl-content">
-                <div class="tl-label mono">LONGITUDINAL INTELLIGENCE</div>
-                <p class="tl-text">One year of data. The most honest biological record you've ever had.</p>
-              </div>
-            </div>
-          </div>
-          <div class="protocol-cadence reveal-item mono">
-            RETEST INTERVAL &nbsp;/&nbsp; EVERY 4 MONTHS
-          </div>
-        </div>
-      </section>
-
-      <!-- ── SECTION 5: WHO ── -->
-      <section class="section s-who" data-reveal>
-        <div class="section-arc" aria-hidden="true">
-          <svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle class="arc-ring" cx="200" cy="200" r="180" stroke="rgb(87,130,127)" stroke-width="0.75"/>
-          </svg>
-        </div>
-        <div class="section-inner">
-          <div class="kicker mono reveal-item">LAYER 04 / WHO MONITORS</div>
-          <h2 class="section-title reveal-title">
-            For those already<br>at the frontier.
+          <p class="kicker mono reveal-item">LAYER 04 / WHO IT'S FOR</p>
+          <h2 class="section-title reveal-title" id="who-heading">
+            Built for<br>longevity clinics.
           </h2>
           <div class="rule reveal-rule"></div>
           <div class="who-grid">
             <div class="who-item reveal-who">
-              <div class="who-tag mono">PRACTITIONERS</div>
-              <p>Clinics running peptide, hormone, and longevity protocols. Prove your interventions are working at the molecular level.</p>
+              <h3 class="who-tag mono">LONGEVITY CLINICS</h3>
+              <p>Clinics that want to see, client by client, which of the therapeutics they offer measurably change biology.</p>
             </div>
             <div class="who-item reveal-who">
-              <div class="who-tag mono">RESEARCHERS</div>
-              <p>Longitudinal epigenetic data, validated clocks, full immune deconvolution — from a single non-invasive sample.</p>
-            </div>
-            <div class="who-item reveal-who">
-              <div class="who-tag mono">PERFORMANCE-DRIVEN</div>
-              <p>Recovery, cognitive load, training stress — all leave epigenetic marks. For the first time, see them.</p>
+              <h3 class="who-tag mono">RESEARCHERS</h3>
+              <p>We are also open to conversations with researchers studying epigenetic change.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- ── SECTION 6: CTA ── -->
-      <section class="section s-cta" id="waitlist" data-reveal>
+      <!-- ── 05 WHERE WE ARE ── -->
+      <section class="section section--compact s-status" id="status" data-reveal aria-labelledby="status-heading">
+        <div class="section-inner">
+          <p class="kicker mono reveal-item">LAYER 05 / WHERE WE ARE</p>
+          <h2 class="section-title reveal-title" id="status-heading">
+            Working with two clinical partners.
+          </h2>
+        </div>
+      </section>
+
+      <!-- ── 06 FOUNDER ── -->
+      <section class="section section--compact s-founder" id="founder" data-reveal aria-labelledby="founder-heading">
+        <div class="section-inner">
+          <p class="kicker mono reveal-item">LAYER 06 / FOUNDER</p>
+          <h2 class="section-title reveal-title" id="founder-heading">Arda Ozgel</h2>
+          <div class="rule reveal-rule"></div>
+          <dl class="spec">
+            <div class="spec-row reveal-item">
+              <dt class="mono">TITLE</dt>
+              <dd>Founder &amp; CEO</dd>
+            </div>
+            <div class="spec-row reveal-item">
+              <dt class="mono">AFFILIATION</dt>
+              <dd>Researcher, Innovative Genomics Institute, UC Berkeley</dd>
+            </div>
+          </dl>
+          <p class="section-body reveal-item founder-mission">
+            Arda started Projectome to help longevity clinics see which therapeutics measurably change their clients' biology, working toward engineering clients' epigenomes for better outcomes.
+          </p>
+          <p class="fine-print mono reveal-item">Affiliation is personal. Projectome is independent and is not owned or endorsed by the institute.</p>
+        </div>
+      </section>
+
+      <!-- ── 07 CONTACT ── -->
+      <section class="section s-cta" id="contact" data-reveal aria-labelledby="contact-heading">
+        <span id="waitlist" class="anchor-alias" aria-hidden="true"></span>
         <div class="section-arc section-arc--large" aria-hidden="true">
           <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle class="arc-ring" cx="250" cy="250" r="230" stroke="rgb(87,130,127)" stroke-width="0.75"/>
           </svg>
         </div>
         <div class="section-inner">
-          <div class="kicker mono reveal-item">INITIATE MONITORING</div>
-          <h2 class="section-title section-title--cta reveal-title">
-            Begin monitoring.
+          <p class="kicker mono reveal-item">LAYER 07 / CONTACT</p>
+          <h2 class="section-title section-title--cta reveal-title" id="contact-heading">
+            Request a<br>conversation.
           </h2>
           <div class="rule reveal-rule"></div>
           <p class="section-body reveal-item">
-            Early access cohort now forming. Join the waitlist to secure your baseline kit and shape the platform as a founding member.
+            Tell us about your clinic and the therapeutics you offer. Or write to
+            <a class="text-link" href="mailto:arda@projectome.com">arda@projectome.com</a>.
           </p>
           <form
-            class="waitlist-form reveal-form"
-            id="waitlist-form"
+            class="contact-form reveal-form"
+            id="contact-form"
             action="https://formspree.io/f/xykojwyq"
             method="POST"
             novalidate
           >
-            <div class="form-row">
-              <input
-                type="email"
-                class="form-input"
-                id="form-email"
-                name="email"
-                placeholder="your@email.com"
-                autocomplete="email"
-                required
-              >
-              <button type="submit" class="form-btn" id="form-btn">SUBMIT</button>
+            <div class="form-fields" id="form-fields">
+              <div class="field">
+                <label class="field-label mono" for="form-name">NAME</label>
+                <input type="text" class="form-input" id="form-name" name="name" autocomplete="name" required>
+              </div>
+              <div class="field">
+                <label class="field-label mono" for="form-org">CLINIC / ORGANIZATION</label>
+                <input type="text" class="form-input" id="form-org" name="organization" autocomplete="organization">
+              </div>
+              <div class="field">
+                <label class="field-label mono" for="form-email">EMAIL</label>
+                <input type="email" class="form-input" id="form-email" name="email" autocomplete="email" required>
+              </div>
+              <div class="field">
+                <label class="field-label mono" for="form-message">SHORT MESSAGE</label>
+                <textarea class="form-input form-textarea" id="form-message" name="message" rows="4" maxlength="2000"></textarea>
+              </div>
+              <div class="form-hp" aria-hidden="true">
+                <label for="form-gotcha">Leave this field empty</label>
+                <input type="text" id="form-gotcha" name="_gotcha" tabindex="-1" autocomplete="off">
+              </div>
+              <button type="submit" class="form-btn" id="form-btn">REQUEST A CONVERSATION</button>
             </div>
-            <p class="form-note mono" id="form-status">Your data belongs to you. Always.</p>
+            <p class="form-status mono" id="form-status" role="status" aria-live="polite"></p>
           </form>
         </div>
       </section>
 
       <footer class="footer">
-        <span class="mono">PROJECT OME &copy; 2026</span>
-        <span class="mono">LONGITUDINAL EPIGENETICS</span>
+        <div class="footer-row">
+          <span class="mono">PROJECT OME &copy; <span id="footer-year">2026</span></span>
+          <a class="mono footer-mail" href="mailto:arda@projectome.com">ARDA@PROJECTOME.COM</a>
+        </div>
+        <p class="footer-disclaimer">
+          Projectome provides research-grade epigenetic measurement and is not a medical device or a diagnostic service. Nothing on this site is medical advice.
+        </p>
       </footer>
 
-    </div><!-- /right-panel -->
+    </main><!-- /right-panel -->
   </div><!-- /layout -->
 
   <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
